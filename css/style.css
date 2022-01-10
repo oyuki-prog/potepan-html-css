@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6875;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFFFFF;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+.inner {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: inherit;
+}
+@media (max-width: 1199px) {
+  .inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.container {
+  max-width: 80%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  font-size: 12px;
+  height: 40px;
+  padding: 10px 20px;
+  line-height: 20px;
+  background-color: #F79214;
+  color: #fff;
+  border-radius: 40px;
+  transition: opacity 0.5s;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+/*====================================
+firstview
+====================================*/
+.firstview {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .firstview {
+    background-position: right center;
+  }
+}
+
+.header {
+  padding: 20px 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  margin-left: 40px;
+}
+.header-left img {
+  height: 20px;
+}
+
+.header-right {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+@media (max-width: 1199px) {
+  .header-right {
+    display: none;
+  }
+}
+
+.header-nav {
+  display: flex;
+  text-align: center;
+}
+
+.header-nav--item {
+  margin-right: 30px;
+}
+
+.header-nav--item__en {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.header-nav--item__ja {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.sales-point {
+  padding-top: 30px;
+  margin-right: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 767px) {
+  .sales-point {
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 60px;
+}
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.achievement {
+  display: flex;
+  margin: 0 auto;
+}
+
+.achievement-center {
+  margin: 20px;
+}
+@media (max-width: 767px) {
+  .achievement-center {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .achievement-side {
+    width: 30%;
+  }
+}
+
+.link {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .link {
+    display: block;
+  }
+}
+
+.btn__main {
+  height: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 60px;
+  margin-right: 20px;
+  display: block;
+  line-height: 60px;
+}
+@media (max-width: 767px) {
+  .btn__main {
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.btn__simple {
+  height: 60px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: block;
+  line-height: 40px;
+}
+@media (max-width: 767px) {
+  .btn__simple {
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.caution {
+  padding-top: 80px;
+  color: #A2A2A4;
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+
+/*====================================
+about
+====================================*/
+.about {
+  background-color: #F79214;
+  padding-top: 60px;
+  color: #fff;
+}
+.about h2 {
+  font-size: 36px;
+}
+.about h2 span {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.about--inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .about--inner {
+    display: block;
+    padding-bottom: 30px;
+  }
+}
+
+.about--text {
+  width: 53%;
+}
+@media (max-width: 767px) {
+  .about--text {
+    width: 100%;
+  }
+}
+
+.about--caption {
+  margin: 30px 0 50px;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  line-height: 30px;
+}
+
+.btn__white {
+  color: #F79214;
+  background-color: #fff;
+  text-align: center;
+  height: 64px;
+  padding: 12px 60px;
+}
+
+.btn--text__en {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 8px;
+}/*# sourceMappingURL=style.css.map */
